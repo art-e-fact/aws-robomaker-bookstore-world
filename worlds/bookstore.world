@@ -87,6 +87,44 @@
     </model>
 
 
+    <!-- Simple Actor with basic trajectory -->
+    <actor name="test_actor">
+      <pose>0 0 0 0 0 0</pose>
+      <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+      </skin>
+      
+      <!-- Define animation -->
+      <animation name="walking">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <interpolate_x>true</interpolate_x>
+      </animation>
+      
+      <!-- Define trajectory -->
+      <script>
+        <loop>true</loop>
+        <delay_start>0.0</delay_start>
+        <auto_start>true</auto_start>
+        
+        <!-- Walk in a square pattern -->
+        <trajectory id="0" type="walking">
+          <waypoint>
+            <time>0</time>
+            <pose>4 -4 1.0 0 0 1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>3</time>
+            <pose>2 -4 1.0 0 0 3.14</pose>
+          </waypoint>
+          <waypoint>
+            <time>6</time>
+            <pose>4 -4 1.0 0 0 1.57</pose>
+          </waypoint>
+        </trajectory>
+      </script>
+    </actor>
+
+
 	<model name="AirConditionerC_01_001">
         <include>
             <uri>model://aws_robomaker_retail_AirConditionerC_01</uri>
