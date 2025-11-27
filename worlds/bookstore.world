@@ -54,11 +54,11 @@
 
 
     <!-- Enhanced Scene Broadcaster Plugin -->
-    <plugin
+    <!-- <plugin
       filename="libgz-enhanced-scene-broadcaster.so"
       name="gz::sim::systems::EnhancedSceneBroadcaster">
       <dynamic_pose_hertz>60</dynamic_pose_hertz>
-    </plugin>
+    </plugin> -->
 
 
     <!-- Sky cam -->
@@ -1231,4 +1231,5 @@
     </light>
   </world>
 </sdf>
+
 
