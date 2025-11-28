@@ -109,17 +109,41 @@
         <!-- Walk in a square pattern -->
         <trajectory id="0" type="walking">
           <waypoint>
-            <time>0</time>
-            <pose>4 -4 1.0 0 0 1.57</pose>
-          </waypoint>
-          <waypoint>
-            <time>3</time>
-            <pose>2 -4 1.0 0 0 3.14</pose>
-          </waypoint>
-          <waypoint>
-            <time>6</time>
-            <pose>4 -4 1.0 0 0 1.57</pose>
-          </waypoint>
+                <time>0</time>
+                <pose>4 -3.2 1.0 0 0 3.141592653589793</pose>
+            </waypoint>
+            <waypoint>
+                <time>4.0</time>
+                <pose>0.8 -3.2 1.0 0 0 3.141592653589793</pose>
+            </waypoint>
+            <waypoint>
+                <time>6.617993877991495</time>
+                <pose>0.8 -3.2 1.0 0 0 -1.5707963267948966</pose>
+            </waypoint>
+            <waypoint>
+                <time>10.117993877991495</time>
+                <pose>0.8 -6 1.0 0 0 -1.5707963267948966</pose>
+            </waypoint>
+            <waypoint>
+                <time>10.99065850398866</time>
+                <pose>0.8 -6 1.0 0 0 0.0</pose>
+            </waypoint>
+            <waypoint>
+                <time>14.99065850398866</time>
+                <pose>4 -6 1.0 0 0 0.0</pose>
+            </waypoint>
+            <waypoint>
+                <time>15.863323129985826</time>
+                <pose>4 -6 1.0 0 0 1.5707963267948966</pose>
+            </waypoint>
+            <waypoint>
+                <time>19.363323129985826</time>
+                <pose>4 -3.2 1.0 0 0 1.5707963267948966</pose>
+            </waypoint>
+            <waypoint>
+                <time>20.23598775598299</time>
+                <pose>4 -3.2 1.0 0 0 3.141592653589793</pose>
+            </waypoint>
         </trajectory>
       </script>
     </actor>
@@ -1231,6 +1255,7 @@
     </light>
   </world>
 </sdf>
+
 
 
 
