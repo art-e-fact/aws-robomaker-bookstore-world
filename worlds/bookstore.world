@@ -65,7 +65,7 @@
     <model name="sky_cam">
         <static>true</static>
         <link name="camera_link">
-        <pose>0 -2 7 0 1.57 0</pose>
+        <pose>0 0 3 0 1.57 0</pose>
         <sensor name="sky_cam" type="camera">
             <camera>
             <horizontal_fov>1.047</horizontal_fov>
@@ -85,68 +85,6 @@
         </sensor>
         </link>
     </model>
-
-
-    <!-- Simple Actor with basic trajectory -->
-    <actor name="test_actor">
-      <pose>0 0 0 0 0 0</pose>
-      <skin>
-        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
-      </skin>
-      
-      <!-- Define animation -->
-      <animation name="walking">
-        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
-        <interpolate_x>true</interpolate_x>
-      </animation>
-      
-      <!-- Define trajectory -->
-      <script>
-        <loop>true</loop>
-        <delay_start>0.0</delay_start>
-        <auto_start>true</auto_start>
-        
-        <!-- Walk in a square pattern -->
-        <trajectory id="0" type="walking">
-          <waypoint>
-                <time>0</time>
-                <pose>4 -3.2 1.0 0 0 3.141592653589793</pose>
-            </waypoint>
-            <waypoint>
-                <time>4.0</time>
-                <pose>0.8 -3.2 1.0 0 0 3.141592653589793</pose>
-            </waypoint>
-            <waypoint>
-                <time>6.617993877991495</time>
-                <pose>0.8 -3.2 1.0 0 0 -1.5707963267948966</pose>
-            </waypoint>
-            <waypoint>
-                <time>10.117993877991495</time>
-                <pose>0.8 -6 1.0 0 0 -1.5707963267948966</pose>
-            </waypoint>
-            <waypoint>
-                <time>10.99065850398866</time>
-                <pose>0.8 -6 1.0 0 0 0.0</pose>
-            </waypoint>
-            <waypoint>
-                <time>14.99065850398866</time>
-                <pose>4 -6 1.0 0 0 0.0</pose>
-            </waypoint>
-            <waypoint>
-                <time>15.863323129985826</time>
-                <pose>4 -6 1.0 0 0 1.5707963267948966</pose>
-            </waypoint>
-            <waypoint>
-                <time>19.363323129985826</time>
-                <pose>4 -3.2 1.0 0 0 1.5707963267948966</pose>
-            </waypoint>
-            <waypoint>
-                <time>20.23598775598299</time>
-                <pose>4 -3.2 1.0 0 0 3.141592653589793</pose>
-            </waypoint>
-        </trajectory>
-      </script>
-    </actor>
 
 
 	<model name="AirConditionerC_01_001">
@@ -1255,6 +1193,7 @@
     </light>
   </world>
 </sdf>
+
 
 
 
